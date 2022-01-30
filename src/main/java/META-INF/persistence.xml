@@ -9,12 +9,16 @@
    <persistence-unit name="Eclipselink_JPA" transaction-type="JTA">
    	<jta-data-source>jpadb</jta-data-source>
    	<class>root.Colocation</class>
-   	<class>root.User</class>
+   	<class>root.UserC</class>
+   	<class>root.Service</class>
+   	<class>root.AchievedService</class>
   
 
       <properties>
-         <property name="eclipselink.logging.level" value="FINE"/>
-         <property name="eclipselink.ddl-generation" value="create-tables"/>
+         <property name="eclipselink.logging.level" value="FINEST"/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>              
+         <property name="javax.persistence.schema-generation.database.action"  value="drop-and-create"/>
+    
       </properties>
       
    </persistence-unit>

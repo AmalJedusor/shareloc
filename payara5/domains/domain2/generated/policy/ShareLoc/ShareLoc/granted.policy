@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Thu Jan 06 15:42:30 CET 2022*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ShareLocApplication", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+

@@ -7,33 +7,35 @@ import javax.persistence.*;
 @Entity
 @Table
 public class Colocation {
-	private String name;
-	ArrayList<User> users;
-	private int master;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) 	   
-	private int id;
-	ArrayList<Service> services;
-	ArrayList<AchievedService> achievedServices;
+	private long id;
+	private String name;
+	private long master;
+	ArrayList<UserC> users = new ArrayList<>();
+	ArrayList<Service> services  = new ArrayList<>();
+	ArrayList<AchievedService> achievedServices = new ArrayList<>();
 	
-public Colocation() {
-	
-}
-	public Colocation(String name, int master) {
+	public Colocation() {
+		
+	}
+	public Colocation(String name, long userid) {
 		
 		this.name = name;
-		this.master = master;
-
+		this.master = userid;
 		
-		this.id = 0;
-	}
+		/*
+		User example = new User();
+		this.users.add(example);
+		this.services.add(new Service());
+		this.achievedServices.add(new AchievedService());
+		*/
+		}
 	
-
-
-	public ArrayList<User> getUsers() {
+	public ArrayList<UserC> getUsers() {
 		return users;
 	}
-	public void setUsers(ArrayList<User> users) {
+	public void setUsers(ArrayList<UserC> users) {
 		this.users = users;
 	}
 	public ArrayList<Service> getServices() {
@@ -51,23 +53,10 @@ public Colocation() {
 
 
 
-	private class Service {
-		String title;
-		String description;
-		String cost;
-	}
-	private class AchievedService extends Service {
-		User from ;
-		User to ;// utilisateur(s) ayant bénéficié du service
-		String date ; // date à laquelle a été rendu le service
-		String picture; // photo accompagnant éventuellement la déclaration
-		Boolean valid ; // indique si la déclaration de service fait a été validée ou non
-
-	}
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -79,11 +68,11 @@ public Colocation() {
 		this.name = name;
 	}
 
-	public int getMaster() {
+	public long getMaster() {
 		return master;
 	}
 
-	public void setMaster(int master) {
+	public void setMaster(long master) {
 		this.master = master;
 	}
 
