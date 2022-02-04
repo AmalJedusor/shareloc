@@ -1,21 +1,17 @@
 package root;
 
-import static org.mockito.Mockito.mock;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.ejb.SessionContext;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceUnit;
-import javax.persistence.TypedQuery;
 import javax.sql.DataSource;
 import javax.transaction.HeuristicMixedException;
 import javax.transaction.HeuristicRollbackException;

@@ -51,7 +51,7 @@
 <!DOCTYPE client-container PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Application Client Container//EN" "http://glassfish.org/dtds/glassfish-application-client-container_1_3.dtd">
 
 <client-container>
-  <target-server name="ip-172-31-23-20.eu-west-1.compute.internal" address="localhost" port="3700"/>
+  <target-server name="DESKTOP-S7VJ92B" address="localhost" port="8037"/>
   <log-service file="" level="WARNING"/>
   <message-security-config auth-layer="SOAP">
     <!-- turned off by default -->

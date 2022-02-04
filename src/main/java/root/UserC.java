@@ -16,6 +16,19 @@ public class UserC {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) 
 	private long id;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public ArrayList<Colocation> getColocations() {
+		return colocations;
+	}
+	public void setColocations(ArrayList<Colocation> colocations) {
+		this.colocations = colocations;
+	}
+
 	private ArrayList<Colocation> colocations;
 	
 	public UserC() {

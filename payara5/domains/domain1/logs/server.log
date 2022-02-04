@@ -1,0 +1,1764 @@
+[2022-01-30T18:56:34.968+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/Cours/API/payara5/glassfish/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=206 _ThreadName=admin-thread-pool::admin-listener(5)] [timeMillis: 1643565394968] [levelValue: 300] [[
+  End deploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/Cours/API/payara5/glassfish/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state DeployFailed; factoryCount 1]]
+
+[2022-01-30T18:56:34.968+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/Cours/API/payara5/glassfish/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=206 _ThreadName=admin-thread-pool::admin-listener(5)] [timeMillis: 1643565394968] [levelValue: 300] [[
+  Begin undeploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/Cours/API/payara5/glassfish/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state DeployFailed; factoryCount 1]]
+
+[2022-01-30T18:56:34.968+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/Cours/API/payara5/glassfish/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=206 _ThreadName=admin-thread-pool::admin-listener(5)] [timeMillis: 1643565394968] [levelValue: 300] [[
+  End undeploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/Cours/API/payara5/glassfish/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state Undeployed; factoryCount 0]]
+
+[2022-01-30T18:56:34.968+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.system.core] [tid: _ThreadID=206 _ThreadName=admin-thread-pool::admin-listener(5)] [timeMillis: 1643565394968] [levelValue: 1000] [[
+  Exception while invoking class org.glassfish.persistence.jpa.JPADeployer prepare method]]
+
+[2022-01-30T18:56:34.968+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.system.core] [tid: _ThreadID=206 _ThreadName=admin-thread-pool::admin-listener(5)] [timeMillis: 1643565394968] [levelValue: 1000] [[
+  Exception while preparing the app]]
+
+[2022-01-30T18:56:34.968+0100] [Payara 5.2021.9] [GRAVE] [NCLS-CORE-00026] [javax.enterprise.system.core] [tid: _ThreadID=206 _ThreadName=admin-thread-pool::admin-listener(5)] [timeMillis: 1643565394968] [levelValue: 1000] [[
+  Exception during lifecycle processing
+javax.persistence.PersistenceException: Exception [EclipseLink-28019] (Eclipse Persistence Services - 2.7.9.payara-p1): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Deployment of PersistenceUnit [Eclipselink_JPA] failed. Close all factories for this PersistenceUnit.
+Internal Exception: java.lang.Error: Unresolved compilation problems: 
+	User cannot be resolved to a type
+	AchievedService cannot be resolved to a type
+
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createDeployFailedPersistenceException(EntityManagerSetupImpl.java:912)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:852)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:388)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:316)
+	at org.glassfish.persistence.jpa.PersistenceUnitLoader.loadPU(PersistenceUnitLoader.java:207)
+	at org.glassfish.persistence.jpa.PersistenceUnitLoader.<init>(PersistenceUnitLoader.java:114)
+	at org.glassfish.persistence.jpa.JPADeployer$1.visitPUD(JPADeployer.java:267)
+	at org.glassfish.persistence.jpa.JPADeployer$PersistenceUnitDescriptorIterator.iteratePUDs(JPADeployer.java:571)
+	at org.glassfish.persistence.jpa.JPADeployer.createEMFs(JPADeployer.java:286)
+	at org.glassfish.persistence.jpa.JPADeployer.prepare(JPADeployer.java:183)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.prepareModule(ApplicationLifecycle.java:1131)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.prepare(ApplicationLifecycle.java:504)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:588)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at org.glassfish.deployment.admin.ReDeployCommand.execute(ReDeployCommand.java:129)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Exception [EclipseLink-28019] (Eclipse Persistence Services - 2.7.9.payara-p1): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Deployment of PersistenceUnit [Eclipselink_JPA] failed. Close all factories for this PersistenceUnit.
+Internal Exception: java.lang.Error: Unresolved compilation problems: 
+	User cannot be resolved to a type
+	AchievedService cannot be resolved to a type
+
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.deployFailed(EntityManagerSetupException.java:241)
+	... 67 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	User cannot be resolved to a type
+	AchievedService cannot be resolved to a type
+
+	at root.Colocation.<init>(Colocation.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347)
+	at java.base/java.lang.Class.newInstance(Class.java:645)
+	at org.eclipse.persistence.descriptors.ClassDescriptor.preInitialize(ClassDescriptor.java:4185)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:715)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:698)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:629)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:868)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:811)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:773)
+	... 65 more
+]]
+
+[2022-01-30T18:56:34.975+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.system.core] [tid: _ThreadID=206 _ThreadName=admin-thread-pool::admin-listener(5)] [timeMillis: 1643565394975] [levelValue: 1000] [[
+  Exception while preparing the app : Exception [EclipseLink-28019] (Eclipse Persistence Services - 2.7.9.payara-p1): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Deployment of PersistenceUnit [Eclipselink_JPA] failed. Close all factories for this PersistenceUnit.
+Internal Exception: java.lang.Error: Unresolved compilation problems: 
+	User cannot be resolved to a type
+	AchievedService cannot be resolved to a type
+
+Local Exception Stack: 
+Exception [EclipseLink-28019] (Eclipse Persistence Services - 2.7.9.payara-p1): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Deployment of PersistenceUnit [Eclipselink_JPA] failed. Close all factories for this PersistenceUnit.
+Internal Exception: java.lang.Error: Unresolved compilation problems: 
+	User cannot be resolved to a type
+	AchievedService cannot be resolved to a type
+
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.deployFailed(EntityManagerSetupException.java:241)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createDeployFailedPersistenceException(EntityManagerSetupImpl.java:912)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:852)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:388)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:316)
+	at org.glassfish.persistence.jpa.PersistenceUnitLoader.loadPU(PersistenceUnitLoader.java:207)
+	at org.glassfish.persistence.jpa.PersistenceUnitLoader.<init>(PersistenceUnitLoader.java:114)
+	at org.glassfish.persistence.jpa.JPADeployer$1.visitPUD(JPADeployer.java:267)
+	at org.glassfish.persistence.jpa.JPADeployer$PersistenceUnitDescriptorIterator.iteratePUDs(JPADeployer.java:571)
+	at org.glassfish.persistence.jpa.JPADeployer.createEMFs(JPADeployer.java:286)
+	at org.glassfish.persistence.jpa.JPADeployer.prepare(JPADeployer.java:183)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.prepareModule(ApplicationLifecycle.java:1131)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.prepare(ApplicationLifecycle.java:504)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:588)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at org.glassfish.deployment.admin.ReDeployCommand.execute(ReDeployCommand.java:129)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	User cannot be resolved to a type
+	AchievedService cannot be resolved to a type
+
+	at root.Colocation.<init>(Colocation.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347)
+	at java.base/java.lang.Class.newInstance(Class.java:645)
+	at org.eclipse.persistence.descriptors.ClassDescriptor.preInitialize(ClassDescriptor.java:4185)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:715)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:698)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:629)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:868)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:811)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:773)
+	... 65 more
+]]
+
+[2022-01-30T18:56:39.969+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=408 _ThreadName=Thread-41] [timeMillis: 1643565399969] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2022-01-30T18:56:39.975+0100] [Payara 5.2021.9] [INFOS] [] [] [tid: _ThreadID=408 _ThreadName=Thread-41] [timeMillis: 1643565399975] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2022-01-30T18:56:39.991+0100] [Payara 5.2021.9] [INFOS] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=408 _ThreadName=Thread-41] [timeMillis: 1643565399991] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2022-01-30T18:56:39.992+0100] [Payara 5.2021.9] [INFOS] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=408 _ThreadName=Thread-41] [timeMillis: 1643565399992] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2022-01-30T18:56:40.035+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=412 _ThreadName=RunLevelControllerThread-1643565400017] [timeMillis: 1643565400035] [levelValue: 800] [[
+  Hazelcast Instance Unbound from JNDI at payara/Hazelcast]]
+
+[2022-01-30T18:56:40.036+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=412 _ThreadName=RunLevelControllerThread-1643565400017] [timeMillis: 1643565400036] [levelValue: 800] [[
+  JSR107 Caching Provider Unbound from JNDI at payara/CachingProvider]]
+
+[2022-01-30T18:56:40.036+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=412 _ThreadName=RunLevelControllerThread-1643565400017] [timeMillis: 1643565400036] [levelValue: 800] [[
+  JSR107 Cache Manager Unbound from JNDI at payara/CacheManager]]
+
+[2022-01-30T18:56:40.059+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=412 _ThreadName=RunLevelControllerThread-1643565400017] [timeMillis: 1643565400059] [levelValue: 800] [[
+  Shutdown Hazelcast]]
+
+[2022-01-30T18:56:40.063+0100] [Payara 5.2021.9] [INFOS] [] [] [tid: _ThreadID=416 _ThreadName=RunLevelControllerThread-1643565400018] [timeMillis: 1643565400063] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]]]
+
+[2022-01-30T18:56:40.067+0100] [Payara 5.2021.9] [INFOS] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=419 _ThreadName=RA Shutdown] [timeMillis: 1643565400067] [levelValue: 800] [[
+  RAR7094: __ds_jdbc_ra shutdown successful.]]
+
+[2022-02-03T19:56:00.664+0100] [Payara 5.2021.9] [INFOS] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=35 _ThreadName=RunLevelControllerThread-1643914560589] [timeMillis: 1643914560664] [levelValue: 800] [[
+  Running Payara Version: Payara Server  5.2021.9 #badassfish (build 878)]]
+
+[2022-02-03T19:56:00.669+0100] [Payara 5.2021.9] [INFOS] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=35 _ThreadName=RunLevelControllerThread-1643914560589] [timeMillis: 1643914560669] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2022-02-03T19:56:01.063+0100] [Payara 5.2021.9] [INFOS] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=35 _ThreadName=RunLevelControllerThread-1643914560589] [timeMillis: 1643914561063] [levelValue: 800] [[
+  Registered fish.payara.ha.hazelcast.store.HazelcastBackingStoreFactoryProxy for persistence-type = hazelcast in BackingStoreFactoryRegistry]]
+
+[2022-02-03T19:56:05.198+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=37 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565198] [levelValue: 800] [[
+  Hazelcast Instance Bound to JNDI at payara/Hazelcast]]
+
+[2022-02-03T19:56:05.199+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=37 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565199] [levelValue: 800] [[
+  JSR107 Caching Provider Bound to JNDI at payara/CachingProvider]]
+
+[2022-02-03T19:56:05.199+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=37 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565199] [levelValue: 800] [[
+  JSR107 Default Cache Manager Bound to JNDI at payara/CacheManager]]
+
+[2022-02-03T19:56:05.321+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=37 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565321] [levelValue: 800] [[
+  Network Listener http-listener-1 started in: 8ms - bound to [/0.0.0.0:8080]]]
+
+[2022-02-03T19:56:05.357+0100] [Payara 5.2021.9] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=36 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565357] [levelValue: 800] [[
+  HV000001: Hibernate Validator 6.1.5.Final]]
+
+[2022-02-03T19:56:05.373+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=37 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565373] [levelValue: 800] [[
+  Network Listener http-listener-2 started in: 3ms - bound to [/0.0.0.0:8181]]]
+
+[2022-02-03T19:56:05.388+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=37 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565388] [levelValue: 800] [[
+  Network Listener admin-listener started in: 3ms - bound to [/0.0.0.0:4848]]]
+
+[2022-02-03T19:56:05.390+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=37 _ThreadName=RunLevelControllerThread-1643914560594] [timeMillis: 1643914565390] [levelValue: 800] [[
+  Grizzly 2.4.4 started in: 4424ms - bound to [http-listener-1:8080, http-listener-2:8181, admin-listener:4848]]]
+
+[2022-02-03T19:56:05.481+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=35 _ThreadName=RunLevelControllerThread-1643914560589] [timeMillis: 1643914565481] [levelValue: 800] [[
+  Network Listener iiop-service started in: 3ms - bound to [/0.0.0.0:3700]]]
+
+[2022-02-03T19:56:05.695+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1643914565695] [levelValue: 800] [[
+  Payara Server  5.2021.9 #badassfish (878) startup time : Felix (1576ms), startup services(5111ms), total(6687ms)]]
+
+[2022-02-03T19:56:05.696+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.cluster.PayaraCluster] [tid: _ThreadID=99 _ThreadName=Executor-Service-3] [timeMillis: 1643914565696] [levelValue: 800] [[
+  Data Grid Status 
+Payara Data Grid State: DG Version: 4 DG Name: development DG Size: 1
+Instances: {
+ DataGrid: development Name: server Lite: false This: true UUID: d6aabcce-62dd-46cf-80cb-073b3f5079ae Address: /192.168.0.20:4900
+}]]
+
+[2022-02-03T19:56:05.702+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.notification.NotificationService] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1643914565702] [levelValue: 800] [[
+  Payara Notification Service bootstrapped.]]
+
+[2022-02-03T19:56:05.708+0100] [Payara 5.2021.9] [INFOS] [] [monitoring-console-core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1643914565708] [levelValue: 800] [[
+  Bootstrapping Monitoring Console Runtime]]
+
+[2022-02-03T19:56:05.725+0100] [Payara 5.2021.9] [INFOS] [] [monitoring-console-core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1643914565725] [levelValue: 800] [[
+  Starting monitoring data collection for server]]
+
+[2022-02-03T19:56:05.726+0100] [Payara 5.2021.9] [INFOS] [] [monitoring-console-core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1643914565726] [levelValue: 800] [[
+  Starting monitoring watch collection for server]]
+
+[2022-02-03T19:56:05.837+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00101] [javax.enterprise.system.core] [tid: _ThreadID=35 _ThreadName=RunLevelControllerThread-1643914560589] [timeMillis: 1643914565837] [levelValue: 800] [[
+  Network Listener JMS_PROXY_default_JMS_host started in: 2ms - bound to [/0.0.0.0:7676]]]
+
+[2022-02-03T19:56:05.915+0100] [Payara 5.2021.9] [INFOS] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=138 _ThreadName=Thread-12] [timeMillis: 1643914565915] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://0.0.0.0:8686/jndi/rmi://0.0.0.0:8686/jmxrmi]]
+
+[2022-02-03T19:56:06.021+0100] [Payara 5.2021.9] [INFOS] [] [org.jvnet.hk2.osgiadapter] [tid: _ThreadID=25 _ThreadName=FelixStartLevel] [timeMillis: 1643914566021] [levelValue: 800] [[
+  Skipping registration of inhabitant for service reference [org.osgi.service.metatype.MetaTypeProvider] as the service object could not be obtained.]]
+
+[2022-02-03T19:56:10.068+0100] [Payara 5.2021.9] [AVERTISSEMENT] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570068] [levelValue: 900] [[
+  The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R2
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21057703584475184807565557524537816321491861642060041763647257260224980509300477196924243590718942686590709107534863816871998744486217397041943036790668349398596465655712023148303173173625617456109014852791089527884590320201838663822684972532489783525944263241117811947512306928924706019699374824809368116805968844700689553244922646662031817428598871924656385681991340984751484716908148967287908171187321560857250025694833777855463632395686856225456740364321799926634676042609958611723658984406384068047734580405304178873193147583468071249577706812402337331306461396767845742998827081874578148453783909473879293336463
+  public exponent: 65537
+  Validity: [From: Fri Dec 15 09:00:00 CET 2006,
+               To: Wed Dec 15 09:00:00 CET 2021]
+  Issuer: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R2
+  SerialNumber: [    04000000 00010f86 26e60d]
+
+Certificate Extensions: 5
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9B E2 07 57 67 1C 1E C0   6A 06 DE 59 B4 9A 2D DF  ...Wg...j..Y..-.
+0010: DC 19 86 2E                                        ....
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.globalsign.net/root-r2.crl]
+]]
+
+[4]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[5]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9B E2 07 57 67 1C 1E C0   6A 06 DE 59 B4 9A 2D DF  ...Wg...j..Y..-.
+0010: DC 19 86 2E                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 99 81 53 87 1C 68 97 86   91 EC E0 4A B8 44 0B AB  ..S..h.....J.D..
+0010: 81 AC 27 4F D6 C1 B8 1C   43 78 B3 0C 9A FC EA 2C  ..'O....Cx.....,
+0020: 3C 6E 61 1B 4D 4B 29 F5   9F 05 1D 26 C1 B8 E9 83  <na.MK)....&....
+0030: 00 62 45 B6 A9 08 93 B9   A9 33 4B 18 9A C2 F8 87  .bE......3K.....
+0040: 88 4E DB DD 71 34 1A C1   54 DA 46 3F E0 D3 2A AB  .N..q4..T.F?..*.
+0050: 6D 54 22 F5 3A 62 CD 20   6F BA 29 89 D7 DD 91 EE  mT".:b. o.).....
+0060: D3 5C A2 3E A1 5B 41 F5   DF E5 64 43 2D E9 D5 39  .\.>.[A...dC-..9
+0070: AB D2 A2 DF B7 8B D0 C0   80 19 1C 45 C0 2D 8C E8  ...........E.-..
+0080: F8 2D A4 74 56 49 C5 05   B5 4F 15 DE 6E 44 78 39  .-.tVI...O..nDx9
+0090: 87 A8 7E BB F3 79 18 91   BB F4 6F 9D C1 F0 8C 35  .....y....o....5
+00A0: 8C 5D 01 FB C3 6D B9 EF   44 6D 79 46 31 7E 0A FE  .]...m..DmyF1...
+00B0: A9 82 C1 FF EF AB 6E 20   C4 50 C9 5F 9D 4D 9B 17  ......n .P._.M..
+00C0: 8C 0C E5 01 C9 A0 41 6A   73 53 FA A5 50 B4 6E 25  ......AjsS..P.n%
+00D0: 0F FB 4C 18 F4 FD 52 D9   8E 69 B1 E8 11 0F DE 88  ..L...R..i......
+00E0: D8 FB 1D 49 F7 AA DE 95   CF 20 78 C2 60 12 DB 25  ...I..... x.`..%
+00F0: 40 8C 6A FC 7E 42 38 40   64 12 F7 9E 81 E1 93 2E  @.j..B8@d.......
+
+]]]
+
+[2022-02-03T19:56:10.073+0100] [Payara 5.2021.9] [AVERTISSEMENT] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570073] [levelValue: 900] [[
+  The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: CN=Cybertrust Global Root, O="Cybertrust, Inc"
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 31406086863853339614786463945665006091825321746292974032075109763941168172593882473582961627008352444079145675351385900708129081497607089017329409594468035320682096346734075492997403070793519552788350008081203303471332386373704595449284865412073659457501957028081264024671694760101660705204156984517694405101994603539690552290606865622457220815368390286450693956965889462171306833581726262489651104041406085303372913841534128533101499335562168326370545583956917237487887103701112968547806227798294711672392349657692008416677913703875810313921466914414637063617907291003581979616487942445986175951017114046467179620261
+  public exponent: 65537
+  Validity: [From: Fri Dec 15 09:00:00 CET 2006,
+               To: Wed Dec 15 09:00:00 CET 2021]
+  Issuer: CN=Cybertrust Global Root, O="Cybertrust, Inc"
+  SerialNumber: [    04000000 00010f85 aa2d48]
+
+Certificate Extensions: 5
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: B6 08 7B 0D 7A CC AC 20   4C 86 56 32 5E CF AB 6E  ....z.. L.V2^..n
+0010: 85 2D 70 57                                        .-pW
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://www2.public-trust.com/crl/ct/ctroot.crl]
+]]
+
+[4]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[5]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: B6 08 7B 0D 7A CC AC 20   4C 86 56 32 5E CF AB 6E  ....z.. L.V2^..n
+0010: 85 2D 70 57                                        .-pW
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 56 EF 0A 23 A0 54 4E 95   97 C9 F8 89 DA 45 C1 D4  V..#.TN......E..
+0010: A3 00 25 F4 1F 13 AB B7   A3 85 58 69 C2 30 AD D8  ..%.......Xi.0..
+0020: 15 8A 2D E3 C9 CD 81 5A   F8 73 23 5A A7 7C 05 F3  ..-....Z.s#Z....
+0030: FD 22 3B 0E D1 06 C4 DB   36 4C 73 04 8E E5 B0 22  .";.....6Ls...."
+0040: E4 C5 F3 2E A5 D9 23 E3   B8 4E 4A 20 A7 6E 02 24  ......#..NJ .n.$
+0050: 9F 22 60 67 7B 8B 1D 72   09 C5 31 5C E9 79 9F 80  ."`g...r..1\.y..
+0060: 47 3D AD A1 0B 07 14 3D   47 FF 03 69 1A 0C 0B 44  G=.....=G..i...D
+0070: E7 63 25 A7 7F B2 C9 B8   76 84 ED 23 F6 7D 07 AB  .c%.....v..#....
+0080: 45 7E D3 DF B3 BF E9 8A   B6 CD A8 A2 67 2B 52 D5  E...........g+R.
+0090: B7 65 F0 39 4C 63 A0 91   79 93 52 0F 54 DD 83 BB  .e.9Lc..y.R.T...
+00A0: 9F D1 8F A7 53 73 C3 CB   FF 30 EC 7C 04 B8 D8 44  ....Ss...0.....D
+00B0: 1F 93 5F 71 09 22 B7 6E   3E EA 1C 03 4E 9D 1A 20  .._q.".n>...N.. 
+00C0: 61 FB 81 37 EC 5E FC 0A   45 AB D7 E7 17 55 D0 A0  a..7.^..E....U..
+00D0: EA 60 9B A6 F6 E3 8C 5B   29 C2 06 60 14 9D 2D 97  .`.....[)..`..-.
+00E0: 4C A9 93 15 9D 61 C4 01   5F 48 D6 58 BD 56 31 12  L....a.._H.X.V1.
+00F0: 4E 11 C8 21 E0 B3 11 91   65 DB B4 A6 88 38 CE 55  N..!....e....8.U
+
+]]]
+
+[2022-02-03T19:56:10.075+0100] [Payara 5.2021.9] [AVERTISSEMENT] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570075] [levelValue: 900] [[
+  The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: CN=Cybertrust Global Root, O="Cybertrust, Inc"
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 31406086863853339614786463945665006091825321746292974032075109763941168172593882473582961627008352444079145675351385900708129081497607089017329409594468035320682096346734075492997403070793519552788350008081203303471332386373704595449284865412073659457501957028081264024671694760101660705204156984517694405101994603539690552290606865622457220815368390286450693956965889462171306833581726262489651104041406085303372913841534128533101499335562168326370545583956917237487887103701112968547806227798294711672392349657692008416677913703875810313921466914414637063617907291003581979616487942445986175951017114046467179620261
+  public exponent: 65537
+  Validity: [From: Fri Dec 15 09:00:00 CET 2006,
+               To: Wed Dec 15 09:00:00 CET 2021]
+  Issuer: CN=Cybertrust Global Root, O="Cybertrust, Inc"
+  SerialNumber: [    04000000 00010f85 aa2d48]
+
+Certificate Extensions: 5
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: B6 08 7B 0D 7A CC AC 20   4C 86 56 32 5E CF AB 6E  ....z.. L.V2^..n
+0010: 85 2D 70 57                                        .-pW
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://www2.public-trust.com/crl/ct/ctroot.crl]
+]]
+
+[4]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[5]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: B6 08 7B 0D 7A CC AC 20   4C 86 56 32 5E CF AB 6E  ....z.. L.V2^..n
+0010: 85 2D 70 57                                        .-pW
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 56 EF 0A 23 A0 54 4E 95   97 C9 F8 89 DA 45 C1 D4  V..#.TN......E..
+0010: A3 00 25 F4 1F 13 AB B7   A3 85 58 69 C2 30 AD D8  ..%.......Xi.0..
+0020: 15 8A 2D E3 C9 CD 81 5A   F8 73 23 5A A7 7C 05 F3  ..-....Z.s#Z....
+0030: FD 22 3B 0E D1 06 C4 DB   36 4C 73 04 8E E5 B0 22  .";.....6Ls...."
+0040: E4 C5 F3 2E A5 D9 23 E3   B8 4E 4A 20 A7 6E 02 24  ......#..NJ .n.$
+0050: 9F 22 60 67 7B 8B 1D 72   09 C5 31 5C E9 79 9F 80  ."`g...r..1\.y..
+0060: 47 3D AD A1 0B 07 14 3D   47 FF 03 69 1A 0C 0B 44  G=.....=G..i...D
+0070: E7 63 25 A7 7F B2 C9 B8   76 84 ED 23 F6 7D 07 AB  .c%.....v..#....
+0080: 45 7E D3 DF B3 BF E9 8A   B6 CD A8 A2 67 2B 52 D5  E...........g+R.
+0090: B7 65 F0 39 4C 63 A0 91   79 93 52 0F 54 DD 83 BB  .e.9Lc..y.R.T...
+00A0: 9F D1 8F A7 53 73 C3 CB   FF 30 EC 7C 04 B8 D8 44  ....Ss...0.....D
+00B0: 1F 93 5F 71 09 22 B7 6E   3E EA 1C 03 4E 9D 1A 20  .._q.".n>...N.. 
+00C0: 61 FB 81 37 EC 5E FC 0A   45 AB D7 E7 17 55 D0 A0  a..7.^..E....U..
+00D0: EA 60 9B A6 F6 E3 8C 5B   29 C2 06 60 14 9D 2D 97  .`.....[)..`..-.
+00E0: 4C A9 93 15 9D 61 C4 01   5F 48 D6 58 BD 56 31 12  L....a.._H.X.V1.
+00F0: 4E 11 C8 21 E0 B3 11 91   65 DB B4 A6 88 38 CE 55  N..!....e....8.U
+
+]]]
+
+[2022-02-03T19:56:10.077+0100] [Payara 5.2021.9] [AVERTISSEMENT] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570077] [levelValue: 900] [[
+  The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R2
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21057703584475184807565557524537816321491861642060041763647257260224980509300477196924243590718942686590709107534863816871998744486217397041943036790668349398596465655712023148303173173625617456109014852791089527884590320201838663822684972532489783525944263241117811947512306928924706019699374824809368116805968844700689553244922646662031817428598871924656385681991340984751484716908148967287908171187321560857250025694833777855463632395686856225456740364321799926634676042609958611723658984406384068047734580405304178873193147583468071249577706812402337331306461396767845742998827081874578148453783909473879293336463
+  public exponent: 65537
+  Validity: [From: Fri Dec 15 09:00:00 CET 2006,
+               To: Wed Dec 15 09:00:00 CET 2021]
+  Issuer: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R2
+  SerialNumber: [    04000000 00010f86 26e60d]
+
+Certificate Extensions: 5
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9B E2 07 57 67 1C 1E C0   6A 06 DE 59 B4 9A 2D DF  ...Wg...j..Y..-.
+0010: DC 19 86 2E                                        ....
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.globalsign.net/root-r2.crl]
+]]
+
+[4]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[5]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9B E2 07 57 67 1C 1E C0   6A 06 DE 59 B4 9A 2D DF  ...Wg...j..Y..-.
+0010: DC 19 86 2E                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 99 81 53 87 1C 68 97 86   91 EC E0 4A B8 44 0B AB  ..S..h.....J.D..
+0010: 81 AC 27 4F D6 C1 B8 1C   43 78 B3 0C 9A FC EA 2C  ..'O....Cx.....,
+0020: 3C 6E 61 1B 4D 4B 29 F5   9F 05 1D 26 C1 B8 E9 83  <na.MK)....&....
+0030: 00 62 45 B6 A9 08 93 B9   A9 33 4B 18 9A C2 F8 87  .bE......3K.....
+0040: 88 4E DB DD 71 34 1A C1   54 DA 46 3F E0 D3 2A AB  .N..q4..T.F?..*.
+0050: 6D 54 22 F5 3A 62 CD 20   6F BA 29 89 D7 DD 91 EE  mT".:b. o.).....
+0060: D3 5C A2 3E A1 5B 41 F5   DF E5 64 43 2D E9 D5 39  .\.>.[A...dC-..9
+0070: AB D2 A2 DF B7 8B D0 C0   80 19 1C 45 C0 2D 8C E8  ...........E.-..
+0080: F8 2D A4 74 56 49 C5 05   B5 4F 15 DE 6E 44 78 39  .-.tVI...O..nDx9
+0090: 87 A8 7E BB F3 79 18 91   BB F4 6F 9D C1 F0 8C 35  .....y....o....5
+00A0: 8C 5D 01 FB C3 6D B9 EF   44 6D 79 46 31 7E 0A FE  .]...m..DmyF1...
+00B0: A9 82 C1 FF EF AB 6E 20   C4 50 C9 5F 9D 4D 9B 17  ......n .P._.M..
+00C0: 8C 0C E5 01 C9 A0 41 6A   73 53 FA A5 50 B4 6E 25  ......AjsS..P.n%
+00D0: 0F FB 4C 18 F4 FD 52 D9   8E 69 B1 E8 11 0F DE 88  ..L...R..i......
+00E0: D8 FB 1D 49 F7 AA DE 95   CF 20 78 C2 60 12 DB 25  ...I..... x.`..%
+00F0: 40 8C 6A FC 7E 42 38 40   64 12 F7 9E 81 E1 93 2E  @.j..B8@d.......
+
+]]]
+
+[2022-02-03T19:56:10.078+0100] [Payara 5.2021.9] [AVERTISSEMENT] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570078] [levelValue: 900] [[
+  The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R2
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21057703584475184807565557524537816321491861642060041763647257260224980509300477196924243590718942686590709107534863816871998744486217397041943036790668349398596465655712023148303173173625617456109014852791089527884590320201838663822684972532489783525944263241117811947512306928924706019699374824809368116805968844700689553244922646662031817428598871924656385681991340984751484716908148967287908171187321560857250025694833777855463632395686856225456740364321799926634676042609958611723658984406384068047734580405304178873193147583468071249577706812402337331306461396767845742998827081874578148453783909473879293336463
+  public exponent: 65537
+  Validity: [From: Fri Dec 15 09:00:00 CET 2006,
+               To: Wed Dec 15 09:00:00 CET 2021]
+  Issuer: CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R2
+  SerialNumber: [    04000000 00010f86 26e60d]
+
+Certificate Extensions: 5
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 9B E2 07 57 67 1C 1E C0   6A 06 DE 59 B4 9A 2D DF  ...Wg...j..Y..-.
+0010: DC 19 86 2E                                        ....
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: http://crl.globalsign.net/root-r2.crl]
+]]
+
+[4]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[5]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 9B E2 07 57 67 1C 1E C0   6A 06 DE 59 B4 9A 2D DF  ...Wg...j..Y..-.
+0010: DC 19 86 2E                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 99 81 53 87 1C 68 97 86   91 EC E0 4A B8 44 0B AB  ..S..h.....J.D..
+0010: 81 AC 27 4F D6 C1 B8 1C   43 78 B3 0C 9A FC EA 2C  ..'O....Cx.....,
+0020: 3C 6E 61 1B 4D 4B 29 F5   9F 05 1D 26 C1 B8 E9 83  <na.MK)....&....
+0030: 00 62 45 B6 A9 08 93 B9   A9 33 4B 18 9A C2 F8 87  .bE......3K.....
+0040: 88 4E DB DD 71 34 1A C1   54 DA 46 3F E0 D3 2A AB  .N..q4..T.F?..*.
+0050: 6D 54 22 F5 3A 62 CD 20   6F BA 29 89 D7 DD 91 EE  mT".:b. o.).....
+0060: D3 5C A2 3E A1 5B 41 F5   DF E5 64 43 2D E9 D5 39  .\.>.[A...dC-..9
+0070: AB D2 A2 DF B7 8B D0 C0   80 19 1C 45 C0 2D 8C E8  ...........E.-..
+0080: F8 2D A4 74 56 49 C5 05   B5 4F 15 DE 6E 44 78 39  .-.tVI...O..nDx9
+0090: 87 A8 7E BB F3 79 18 91   BB F4 6F 9D C1 F0 8C 35  .....y....o....5
+00A0: 8C 5D 01 FB C3 6D B9 EF   44 6D 79 46 31 7E 0A FE  .]...m..DmyF1...
+00B0: A9 82 C1 FF EF AB 6E 20   C4 50 C9 5F 9D 4D 9B 17  ......n .P._.M..
+00C0: 8C 0C E5 01 C9 A0 41 6A   73 53 FA A5 50 B4 6E 25  ......AjsS..P.n%
+00D0: 0F FB 4C 18 F4 FD 52 D9   8E 69 B1 E8 11 0F DE 88  ..L...R..i......
+00E0: D8 FB 1D 49 F7 AA DE 95   CF 20 78 C2 60 12 DB 25  ...I..... x.`..%
+00F0: 40 8C 6A FC 7E 42 38 40   64 12 F7 9E 81 E1 93 2E  @.j..B8@d.......
+
+]]]
+
+[2022-02-03T19:56:10.090+0100] [Payara 5.2021.9] [INFOS] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570090] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2022-02-03T19:56:10.090+0100] [Payara 5.2021.9] [INFOS] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570090] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2022-02-03T19:56:10.094+0100] [Payara 5.2021.9] [INFOS] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570094] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2022-02-03T19:56:10.154+0100] [Payara 5.2021.9] [INFOS] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570154] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2022-02-03T19:56:10.397+0100] [Payara 5.2021.9] [INFOS] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570397] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2022-02-03T19:56:10.402+0100] [Payara 5.2021.9] [INFOS] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570402] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2022-02-03T19:56:10.404+0100] [Payara 5.2021.9] [INFOS] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570404] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2022-02-03T19:56:10.425+0100] [Payara 5.2021.9] [INFOS] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570425] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2022-02-03T19:56:10.429+0100] [Payara 5.2021.9] [INFOS] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570429] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2022-02-03T19:56:10.620+0100] [Payara 5.2021.9] [INFOS] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914570620] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2022-02-03T19:56:12.612+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572612] [levelValue: 500] [[
+  Configured server platform: org.eclipse.persistence.platform.server.glassfish.GlassfishPlatform]]
+
+[2022-02-03T19:56:12.614+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572614] [levelValue: 300] [[
+  Begin predeploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state Initial; factoryCount 0]]
+
+[2022-02-03T19:56:12.618+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572618] [levelValue: 300] [[
+  property=eclipselink.orm.throw.exceptions; default value=true]]
+
+[2022-02-03T19:56:12.618+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572618] [levelValue: 300] [[
+  property=eclipselink.weaving.changetracking; default value=true]]
+
+[2022-02-03T19:56:12.618+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572618] [levelValue: 300] [[
+  property=eclipselink.weaving.lazy; default value=true]]
+
+[2022-02-03T19:56:12.618+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572618] [levelValue: 300] [[
+  property=eclipselink.weaving.eager; default value=false]]
+
+[2022-02-03T19:56:12.618+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572618] [levelValue: 300] [[
+  property=eclipselink.weaving.fetchgroups; default value=true]]
+
+[2022-02-03T19:56:12.618+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572618] [levelValue: 300] [[
+  property=eclipselink.weaving.internal; default value=true]]
+
+[2022-02-03T19:56:12.618+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572618] [levelValue: 300] [[
+  property=eclipselink.weaving.rest; default value=true]]
+
+[2022-02-03T19:56:12.619+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572619] [levelValue: 300] [[
+  property=eclipselink.weaving.mappedsuperclass; default value=true]]
+
+[2022-02-03T19:56:12.619+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572619] [levelValue: 300] [[
+  property=eclipselink.multitenant.tenants-share-emf; default value=true]]
+
+[2022-02-03T19:56:12.619+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572619] [levelValue: 300] [[
+  property=eclipselink.multitenant.tenants-share-cache; default value=false]]
+
+[2022-02-03T19:56:12.631+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572631] [levelValue: 400] [[
+  Searching for mapping file: [META-INF/orm.xml] at root URL: [file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/].]]
+
+[2022-02-03T19:56:12.634+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572634] [levelValue: 400] [[
+  Searching for mapping file: [META-INF/eclipselink-orm.xml] at root URL: [file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/].]]
+
+[2022-02-03T19:56:12.715+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572715] [levelValue: 700] [[
+  The access type for the persistent class [class root.UserC] is set to [FIELD].]]
+
+[2022-02-03T19:56:12.726+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572726] [levelValue: 700] [[
+  The element [field colocations] is being defaulted to a one to many mapping.]]
+
+[2022-02-03T19:56:12.731+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572731] [levelValue: 700] [[
+  The target entity (reference) class for the one to many mapping element [field colocations] is being defaulted to: class root.Colocation.]]
+
+[2022-02-03T19:56:12.733+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572733] [levelValue: 700] [[
+  The access type for the persistent class [class root.Colocation] is set to [FIELD].]]
+
+[2022-02-03T19:56:12.733+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572733] [levelValue: 700] [[
+  The element [field achievedServices] is being defaulted to a one to many mapping.]]
+
+[2022-02-03T19:56:12.733+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572733] [levelValue: 700] [[
+  The target entity (reference) class for the one to many mapping element [field achievedServices] is being defaulted to: class root.AchievedService.]]
+
+[2022-02-03T19:56:12.733+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572733] [levelValue: 700] [[
+  The element [field services] is being defaulted to a one to many mapping.]]
+
+[2022-02-03T19:56:12.733+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572733] [levelValue: 700] [[
+  The target entity (reference) class for the one to many mapping element [field services] is being defaulted to: class root.Service.]]
+
+[2022-02-03T19:56:12.734+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572734] [levelValue: 700] [[
+  The element [field users] is being defaulted to a one to many mapping.]]
+
+[2022-02-03T19:56:12.734+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572734] [levelValue: 700] [[
+  The target entity (reference) class for the one to many mapping element [field users] is being defaulted to: class root.UserC.]]
+
+[2022-02-03T19:56:12.734+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572734] [levelValue: 700] [[
+  The access type for the persistent class [class root.Service] is set to [FIELD].]]
+
+[2022-02-03T19:56:12.734+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572734] [levelValue: 700] [[
+  The access type for the persistent class [class root.AchievedService] is set to [FIELD].]]
+
+[2022-02-03T19:56:12.735+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572735] [levelValue: 700] [[
+  The element [field from] is being defaulted to a one to one mapping.]]
+
+[2022-02-03T19:56:12.736+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572736] [levelValue: 700] [[
+  The target entity (reference) class for the one to one mapping element [field from] is being defaulted to: class root.UserC.]]
+
+[2022-02-03T19:56:12.736+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572736] [levelValue: 700] [[
+  The element [field to] is being defaulted to a one to one mapping.]]
+
+[2022-02-03T19:56:12.736+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572736] [levelValue: 700] [[
+  The target entity (reference) class for the one to one mapping element [field to] is being defaulted to: class root.UserC.]]
+
+[2022-02-03T19:56:12.736+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572736] [levelValue: 700] [[
+  The alias name for the entity class [class root.UserC] is being defaulted to: UserC.]]
+
+[2022-02-03T19:56:12.737+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572737] [levelValue: 700] [[
+  The table name for entity [class root.UserC] is being defaulted to: USERC.]]
+
+[2022-02-03T19:56:12.742+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572742] [levelValue: 700] [[
+  The column name for element [password] is being defaulted to: PASSWORD.]]
+
+[2022-02-03T19:56:12.743+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572743] [levelValue: 700] [[
+  The column name for element [name] is being defaulted to: NAME.]]
+
+[2022-02-03T19:56:12.743+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572743] [levelValue: 700] [[
+  The column name for element [id] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.744+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572744] [levelValue: 700] [[
+  The column name for element [email] is being defaulted to: EMAIL.]]
+
+[2022-02-03T19:56:12.744+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572744] [levelValue: 700] [[
+  The column name for element [lastname] is being defaulted to: LASTNAME.]]
+
+[2022-02-03T19:56:12.744+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572744] [levelValue: 700] [[
+  The alias name for the entity class [class root.Colocation] is being defaulted to: Colocation.]]
+
+[2022-02-03T19:56:12.744+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572744] [levelValue: 700] [[
+  The table name for entity [class root.Colocation] is being defaulted to: COLOCATION.]]
+
+[2022-02-03T19:56:12.744+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572744] [levelValue: 700] [[
+  The column name for element [name] is being defaulted to: NAME.]]
+
+[2022-02-03T19:56:12.744+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572744] [levelValue: 700] [[
+  The column name for element [id] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The column name for element [master] is being defaulted to: MASTER.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The alias name for the entity class [class root.Service] is being defaulted to: Service.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The table name for entity [class root.Service] is being defaulted to: SERVICE.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The column name for element [cost] is being defaulted to: COST.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The column name for element [description] is being defaulted to: DESCRIPTION.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The column name for element [id] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The column name for element [title] is being defaulted to: TITLE.]]
+
+[2022-02-03T19:56:12.745+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572745] [levelValue: 700] [[
+  The alias name for the entity class [class root.AchievedService] is being defaulted to: AchievedService.]]
+
+[2022-02-03T19:56:12.747+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572747] [levelValue: 700] [[
+  The discriminator column name for the root inheritance class [root.Service] is being defaulted to: DTYPE.]]
+
+[2022-02-03T19:56:12.747+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572747] [levelValue: 700] [[
+  The column name for element [date] is being defaulted to: DATE.]]
+
+[2022-02-03T19:56:12.747+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572747] [levelValue: 700] [[
+  The column name for element [valid] is being defaulted to: VALID.]]
+
+[2022-02-03T19:56:12.747+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572747] [levelValue: 700] [[
+  The column name for element [picture] is being defaulted to: PICTURE.]]
+
+[2022-02-03T19:56:12.757+0100] [Payara 5.2021.9] [AVERTISSEMENT] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572757] [levelValue: 900] [[
+  Element [field colocations] within entity class [class root.UserC] uses a collection type [class java.util.ArrayList] when the JPA specification only supports java.util.Collection, java.util.Set, java.util.List, or java.util.Map.  This type is supported with eager loading; using lazy loading with this collection type requires additional configuration and an IndirectContainer implementation that extends [class java.util.ArrayList] or setting the mapping to use basic indirection and the type to be ValueholderInterface.]]
+
+[2022-02-03T19:56:12.759+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572759] [levelValue: 700] [[
+  The join table name for the many to many mapping [field colocations] is being defaulted to: USERC_COLOCATION.]]
+
+[2022-02-03T19:56:12.760+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572760] [levelValue: 700] [[
+  The source primary key column name for the many to many mapping [field colocations] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.761+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572761] [levelValue: 700] [[
+  The source foreign key column name for the many to many mapping [colocations] is being defaulted to: UserC_ID.]]
+
+[2022-02-03T19:56:12.761+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572761] [levelValue: 700] [[
+  The target primary key column name for the many to many mapping [field colocations] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.761+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572761] [levelValue: 700] [[
+  The target foreign key column name for the many to many mapping [colocations] is being defaulted to: colocations_ID.]]
+
+[2022-02-03T19:56:12.761+0100] [Payara 5.2021.9] [AVERTISSEMENT] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572761] [levelValue: 900] [[
+  Element [field achievedServices] within entity class [class root.Colocation] uses a collection type [class java.util.ArrayList] when the JPA specification only supports java.util.Collection, java.util.Set, java.util.List, or java.util.Map.  This type is supported with eager loading; using lazy loading with this collection type requires additional configuration and an IndirectContainer implementation that extends [class java.util.ArrayList] or setting the mapping to use basic indirection and the type to be ValueholderInterface.]]
+
+[2022-02-03T19:56:12.761+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572761] [levelValue: 700] [[
+  The join table name for the many to many mapping [field achievedServices] is being defaulted to: COLOCATION_SERVICE.]]
+
+[2022-02-03T19:56:12.761+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572761] [levelValue: 700] [[
+  The source primary key column name for the many to many mapping [field achievedServices] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.761+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572761] [levelValue: 700] [[
+  The source foreign key column name for the many to many mapping [achievedServices] is being defaulted to: Colocation_ID.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 700] [[
+  The target primary key column name for the many to many mapping [field achievedServices] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 700] [[
+  The target foreign key column name for the many to many mapping [achievedServices] is being defaulted to: achievedServices_ID.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [AVERTISSEMENT] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 900] [[
+  Element [field services] within entity class [class root.Colocation] uses a collection type [class java.util.ArrayList] when the JPA specification only supports java.util.Collection, java.util.Set, java.util.List, or java.util.Map.  This type is supported with eager loading; using lazy loading with this collection type requires additional configuration and an IndirectContainer implementation that extends [class java.util.ArrayList] or setting the mapping to use basic indirection and the type to be ValueholderInterface.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 700] [[
+  The join table name for the many to many mapping [field services] is being defaulted to: COLOCATION_SERVICE.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 700] [[
+  The source primary key column name for the many to many mapping [field services] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 700] [[
+  The source foreign key column name for the many to many mapping [services] is being defaulted to: Colocation_ID.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 700] [[
+  The target primary key column name for the many to many mapping [field services] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.762+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572762] [levelValue: 700] [[
+  The target foreign key column name for the many to many mapping [services] is being defaulted to: services_ID.]]
+
+[2022-02-03T19:56:12.763+0100] [Payara 5.2021.9] [AVERTISSEMENT] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572763] [levelValue: 900] [[
+  Element [field users] within entity class [class root.Colocation] uses a collection type [class java.util.ArrayList] when the JPA specification only supports java.util.Collection, java.util.Set, java.util.List, or java.util.Map.  This type is supported with eager loading; using lazy loading with this collection type requires additional configuration and an IndirectContainer implementation that extends [class java.util.ArrayList] or setting the mapping to use basic indirection and the type to be ValueholderInterface.]]
+
+[2022-02-03T19:56:12.763+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572763] [levelValue: 700] [[
+  The join table name for the many to many mapping [field users] is being defaulted to: COLOCATION_USERC.]]
+
+[2022-02-03T19:56:12.763+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572763] [levelValue: 700] [[
+  The source primary key column name for the many to many mapping [field users] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.763+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572763] [levelValue: 700] [[
+  The source foreign key column name for the many to many mapping [users] is being defaulted to: Colocation_ID.]]
+
+[2022-02-03T19:56:12.763+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572763] [levelValue: 700] [[
+  The target primary key column name for the many to many mapping [field users] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.763+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572763] [levelValue: 700] [[
+  The target foreign key column name for the many to many mapping [users] is being defaulted to: users_ID.]]
+
+[2022-02-03T19:56:12.767+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572767] [levelValue: 700] [[
+  The primary key column name for the mapping element [field from] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.767+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572767] [levelValue: 700] [[
+  The foreign key column name for the mapping element [from] is being defaulted to: FROM_ID.]]
+
+[2022-02-03T19:56:12.767+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572767] [levelValue: 700] [[
+  The primary key column name for the mapping element [field to] is being defaulted to: ID.]]
+
+[2022-02-03T19:56:12.767+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metadata] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572767] [levelValue: 700] [[
+  The foreign key column name for the mapping element [to] is being defaulted to: TO_ID.]]
+
+[2022-02-03T19:56:12.769+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.weaver] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572769] [levelValue: 400] [[
+  Class [root.UserC] registered to be processed by weaver.]]
+
+[2022-02-03T19:56:12.770+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.weaver] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572770] [levelValue: 700] [[
+  Class root.UserC could not be weaved for change tracking as it is not supported by its mappings.]]
+
+[2022-02-03T19:56:12.771+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.weaver] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572771] [levelValue: 400] [[
+  Class [root.Colocation] registered to be processed by weaver.]]
+
+[2022-02-03T19:56:12.771+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.weaver] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572771] [levelValue: 700] [[
+  Class root.Colocation could not be weaved for change tracking as it is not supported by its mappings.]]
+
+[2022-02-03T19:56:12.771+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.weaver] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572771] [levelValue: 400] [[
+  Class [root.Service] registered to be processed by weaver.]]
+
+[2022-02-03T19:56:12.772+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.weaver] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572772] [levelValue: 400] [[
+  Class [root.AchievedService] registered to be processed by weaver.]]
+
+[2022-02-03T19:56:12.779+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572779] [levelValue: 300] [[
+  End predeploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state Predeployed; factoryCount 1]]
+
+[2022-02-03T19:56:12.787+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572787] [levelValue: 400] [[
+  Canonical Metamodel class [root.Colocation_] not found during initialization.]]
+
+[2022-02-03T19:56:12.787+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572787] [levelValue: 400] [[
+  Canonical Metamodel class [root.UserC_] not found during initialization.]]
+
+[2022-02-03T19:56:12.787+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572787] [levelValue: 400] [[
+  Canonical Metamodel class [root.Service_] not found during initialization.]]
+
+[2022-02-03T19:56:12.788+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572788] [levelValue: 400] [[
+  Canonical Metamodel class [root.AchievedService_] not found during initialization.]]
+
+[2022-02-03T19:56:12.788+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572788] [levelValue: 300] [[
+  Begin deploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state Predeployed; factoryCount 1]]
+
+[2022-02-03T19:56:12.793+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572793] [levelValue: 300] [[
+  Begin weaver class transformer processing class [root/UserC].]]
+
+[2022-02-03T19:56:12.804+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572804] [levelValue: 300] [[
+  Weaved persistence (PersistenceEntity) [root/UserC].]]
+
+[2022-02-03T19:56:12.805+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572805] [levelValue: 300] [[
+  Weaved lazy (ValueHolder indirection) [root/UserC].]]
+
+[2022-02-03T19:56:12.805+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572805] [levelValue: 300] [[
+  Weaved fetch groups (FetchGroupTracker) [root/UserC].]]
+
+[2022-02-03T19:56:12.805+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572805] [levelValue: 300] [[
+  Weaved REST [root/UserC].]]
+
+[2022-02-03T19:56:12.805+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572805] [levelValue: 300] [[
+  End weaver class transformer processing class [root/UserC].]]
+
+[2022-02-03T19:56:12.858+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572858] [levelValue: 300] [[
+  Begin weaver class transformer processing class [root/Colocation].]]
+
+[2022-02-03T19:56:12.862+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572862] [levelValue: 300] [[
+  Weaved persistence (PersistenceEntity) [root/Colocation].]]
+
+[2022-02-03T19:56:12.862+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572862] [levelValue: 300] [[
+  Weaved lazy (ValueHolder indirection) [root/Colocation].]]
+
+[2022-02-03T19:56:12.862+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572862] [levelValue: 300] [[
+  Weaved fetch groups (FetchGroupTracker) [root/Colocation].]]
+
+[2022-02-03T19:56:12.862+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572862] [levelValue: 300] [[
+  Weaved REST [root/Colocation].]]
+
+[2022-02-03T19:56:12.862+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572862] [levelValue: 300] [[
+  End weaver class transformer processing class [root/Colocation].]]
+
+[2022-02-03T19:56:12.865+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572865] [levelValue: 300] [[
+  Begin weaver class transformer processing class [root/Service].]]
+
+[2022-02-03T19:56:12.866+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572866] [levelValue: 300] [[
+  Weaved persistence (PersistenceEntity) [root/Service].]]
+
+[2022-02-03T19:56:12.866+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572866] [levelValue: 300] [[
+  Weaved change tracking (ChangeTracker) [root/Service].]]
+
+[2022-02-03T19:56:12.866+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572866] [levelValue: 300] [[
+  Weaved fetch groups (FetchGroupTracker) [root/Service].]]
+
+[2022-02-03T19:56:12.866+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572866] [levelValue: 300] [[
+  Weaved REST [root/Service].]]
+
+[2022-02-03T19:56:12.866+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572866] [levelValue: 300] [[
+  End weaver class transformer processing class [root/Service].]]
+
+[2022-02-03T19:56:12.882+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572882] [levelValue: 300] [[
+  Begin weaver class transformer processing class [root/AchievedService].]]
+
+[2022-02-03T19:56:12.883+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572883] [levelValue: 300] [[
+  Weaved change tracking (ChangeTracker) [root/AchievedService].]]
+
+[2022-02-03T19:56:12.883+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572883] [levelValue: 300] [[
+  Weaved fetch groups (FetchGroupTracker) [root/AchievedService].]]
+
+[2022-02-03T19:56:12.883+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572883] [levelValue: 300] [[
+  End weaver class transformer processing class [root/AchievedService].]]
+
+[2022-02-03T19:56:12.904+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572904] [levelValue: 400] [[
+  Detected server platform: org.eclipse.persistence.platform.server.glassfish.GlassfishPlatform.]]
+
+[2022-02-03T19:56:12.904+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.default] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572904] [levelValue: 400] [[
+  initializing session manager]]
+
+[2022-02-03T19:56:12.904+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572904] [levelValue: 300] [[
+  property=eclipselink.target-server; value=Glassfish; translated value=org.eclipse.persistence.platform.server.glassfish.GlassfishPlatform]]
+
+[2022-02-03T19:56:12.904+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572904] [levelValue: 300] [[
+  property=eclipselink.logging.level; value=FINEST; translated value=FINEST]]
+
+[2022-02-03T19:56:12.905+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.properties] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572905] [levelValue: 300] [[
+  property=eclipselink.logging.level; value=FINEST; translated value=FINEST]]
+
+[2022-02-03T19:56:12.912+0100] [Payara 5.2021.9] [INFOS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914572912] [levelValue: 800] [[
+  EclipseLink, version: Eclipse Persistence Services - 2.7.9.payara-p1]]
+
+[2022-02-03T19:56:13.172+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573172] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.oracle.Oracle19Platform, regular expression: (?is)oracle.*19.*]]
+
+[2022-02-03T19:56:13.172+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573172] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.oracle.Oracle18Platform, regular expression: (?is)oracle.*18.*]]
+
+[2022-02-03T19:56:13.172+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573172] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.oracle.Oracle12Platform, regular expression: (?is)oracle.*12.*]]
+
+[2022-02-03T19:56:13.172+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573172] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.oracle.Oracle11Platform, regular expression: (?is)oracle.*11.*]]
+
+[2022-02-03T19:56:13.172+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573172] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.oracle.Oracle10Platform, regular expression: (?is)oracle.*10.*]]
+
+[2022-02-03T19:56:13.172+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573172] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.oracle.Oracle9Platform, regular expression: (?is)oracle.*9.*]]
+
+[2022-02-03T19:56:13.172+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573172] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.Oracle19Platform, regular expression: (?is)core.oracle.*19.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.Oracle18Platform, regular expression: (?is)core.oracle.*18.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.Oracle12Platform, regular expression: (?is)core.oracle.*12.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.Oracle11Platform, regular expression: (?is)core.oracle.*11.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.Oracle10Platform, regular expression: (?is)core.oracle.*10.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.Oracle9Platform, regular expression: (?is)core.oracle.*9.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.oracle.OraclePlatform, regular expression: (?is)oracle.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.SQLAnywherePlatform, regular expression: SQL\ Anywhere.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.SybasePlatform, regular expression: (?i)(sybase.*)|(adaptive\ server\ enterprise.*)|(SQL\ Server.*)]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.SQLServerPlatform, regular expression: (?i)microsoft.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.JavaDBPlatform, regular expression: (?i).*derby.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.DB2ZPlatform, regular expression: (?i).*db2.*dsn.*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.DB2MainframePlatform, regular expression: (?i).*(db2|AS).*(AS/400|qsq).*]]
+
+[2022-02-03T19:56:13.173+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573173] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.DB2Platform, regular expression: (?i).*db2.*]]
+
+[2022-02-03T19:56:13.174+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573174] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.PointBasePlatform, regular expression: (?is)pointbase.*]]
+
+[2022-02-03T19:56:13.174+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573174] [levelValue: 300] [[
+  Database platform: org.eclipse.persistence.platform.database.MySQLPlatform, regular expression: (?i)mysql.*]]
+
+[2022-02-03T19:56:13.174+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573174] [levelValue: 500] [[
+  Detected database platform: org.eclipse.persistence.platform.database.MySQLPlatform]]
+
+[2022-02-03T19:56:13.180+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573180] [levelValue: 500] [[
+  connecting(DatabaseLogin(
+	platform=>DatabasePlatform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2022-02-03T19:56:13.185+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573185] [levelValue: 700] [[
+  Connected: jdbc:mysql://:3306/jpadb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+	User: root@localhost
+	Database: MySQL  Version: 8.0.27
+	Driver: MySQL Connector/J  Version: mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)]]
+
+[2022-02-03T19:56:13.185+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573185] [levelValue: 300] [[
+  Connection acquired from connection pool [read].]]
+
+[2022-02-03T19:56:13.185+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573185] [levelValue: 300] [[
+  Connection released to connection pool [read].]]
+
+[2022-02-03T19:56:13.185+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573185] [levelValue: 500] [[
+  connecting(DatabaseLogin(
+	platform=>MySQLPlatform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))]]
+
+[2022-02-03T19:56:13.186+0100] [Payara 5.2021.9] [CONFIG] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573186] [levelValue: 700] [[
+  Connected: jdbc:mysql://:3306/jpadb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+	User: root@localhost
+	Database: MySQL  Version: 8.0.27
+	Driver: MySQL Connector/J  Version: mysql-connector-java-8.0.21 (Revision: 33f65445a1bcc544eb0120491926484da168f199)]]
+
+[2022-02-03T19:56:13.191+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.sequencing] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573191] [levelValue: 300] [[
+  sequencing connected, state is Preallocation_Transaction_NoAccessor_State]]
+
+[2022-02-03T19:56:13.191+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.sequencing] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573191] [levelValue: 300] [[
+  sequence SEQUENCE: preallocation size 50]]
+
+[2022-02-03T19:56:13.192+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.sequencing] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573192] [levelValue: 300] [[
+  sequence SEQ_GEN: preallocation size 50]]
+
+[2022-02-03T19:56:13.214+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573214] [levelValue: 500] [[
+  /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA login successful]]
+
+[2022-02-03T19:56:13.215+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573215] [levelValue: 400] [[
+  jmx_mbean_runtime_services_registration_mbeanserver_print (There is no English translation for this message.)]]
+
+[2022-02-03T19:56:13.217+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573217] [levelValue: 300] [[
+  Registered MBean: org.eclipse.persistence.services.mbean.MBeanDevelopmentServices[TopLink:Name=Development-/file_/C_/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA,Type=Configuration] on server com.sun.enterprise.v3.admin.DynamicInterceptor@3a451022]]
+
+[2022-02-03T19:56:13.217+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573217] [levelValue: 300] [[
+  Registered MBean: org.eclipse.persistence.services.glassfish.MBeanGlassfishRuntimeServices[TopLink:Name=Session(/file_/C_/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA)] on server com.sun.enterprise.v3.admin.DynamicInterceptor@3a451022]]
+
+[2022-02-03T19:56:13.217+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573217] [levelValue: 300] [[
+  EclipseLink JMX Runtime Services is referencing the [Platform ConversionManager] ClassLoader at: [WebappClassLoader (delegate=true) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11]]]
+
+[2022-02-03T19:56:13.218+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573218] [levelValue: 300] [[
+  The applicationName for the MBean attached to session [/file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA] is [unknown]]]
+
+[2022-02-03T19:56:13.218+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573218] [levelValue: 300] [[
+  The moduleName for the MBean attached to session [/file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA] is [unknown]]]
+
+[2022-02-03T19:56:13.264+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.query] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573264] [levelValue: 300] [[
+  Execute query DataReadQuery(sql="SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'")]]
+
+[2022-02-03T19:56:13.264+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573264] [levelValue: 300] [[
+  Connection acquired from connection pool [read].]]
+
+[2022-02-03T19:56:13.264+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573264] [levelValue: 300] [[
+  reconnecting to external connection pool]]
+
+[2022-02-03T19:56:13.264+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.sql] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573264] [levelValue: 500] [[
+  SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN']]
+
+[2022-02-03T19:56:13.266+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573266] [levelValue: 300] [[
+  Connection released to connection pool [read].]]
+
+[2022-02-03T19:56:13.268+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573268] [levelValue: 400] [[
+  Canonical Metamodel class [root.Colocation_] not found during initialization.]]
+
+[2022-02-03T19:56:13.269+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573269] [levelValue: 400] [[
+  Canonical Metamodel class [root.UserC_] not found during initialization.]]
+
+[2022-02-03T19:56:13.269+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573269] [levelValue: 400] [[
+  Canonical Metamodel class [root.Service_] not found during initialization.]]
+
+[2022-02-03T19:56:13.269+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.metamodel] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573269] [levelValue: 400] [[
+  Canonical Metamodel class [root.AchievedService_] not found during initialization.]]
+
+[2022-02-03T19:56:13.270+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573270] [levelValue: 300] [[
+  End deploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state Deployed; factoryCount 1]]
+
+[2022-02-03T19:56:13.656+0100] [Payara 5.2021.9] [INFOS] [jsf.config.listener.version] [javax.enterprise.resource.webcontainer.jsf.config] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914573656] [levelValue: 800] [[
+  Initialisation de Mojarra |version.string| pour le contexte «/ShareLoc»]]
+
+[2022-02-03T19:56:14.256+0100] [Payara 5.2021.9] [AVERTISSEMENT] [] [org.glassfish.jersey.internal.Errors] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574256] [levelValue: 900] [[
+  The following warnings have been detected: WARNING: A resource, Resource{"/users", 0 child resources, 0 resource methods, 0 sub-resource locator, 0 method handler classes, 0 method handler instances}, with path "/users" is empty. It has no resource (or sub resource) methods neither sub resource locators defined.
+]]
+
+[2022-02-03T19:56:14.257+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574257] [levelValue: 1000] [[
+  WebModule[/ShareLoc]StandardWrapper.Throwable
+java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at org.glassfish.weld.ACLSingletonProvider$ACLSingleton.get(ACLSingletonProvider.java:117)
+	at org.jboss.weld.Container.instance(Container.java:57)
+	at org.jboss.weld.SimpleCDI.<init>(SimpleCDI.java:77)
+	at org.glassfish.weld.GlassFishWeldProvider$GlassFishEnhancedWeld.<init>(GlassFishWeldProvider.java:57)
+	at org.glassfish.weld.GlassFishWeldProvider$GlassFishEnhancedWeld.<init>(GlassFishWeldProvider.java:57)
+	at org.glassfish.weld.GlassFishWeldProvider.getCDI(GlassFishWeldProvider.java:96)
+	at javax.enterprise.inject.spi.CDI.lambda$getCDIProvider$0(CDI.java:87)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.TreeMap$KeySpliterator.tryAdvance(TreeMap.java:3088)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at javax.enterprise.inject.spi.CDI.getCDIProvider(CDI.java:88)
+	at javax.enterprise.inject.spi.CDI.current(CDI.java:64)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedRequestFilter.<init>(RolesAllowedRequestFilter.java:97)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedRequestFilter.<init>(RolesAllowedRequestFilter.java:90)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedDynamicFeature.configure(RolesAllowedDynamicFeature.java:85)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.<init>(ResourceMethodInvoker.java:222)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.<init>(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker$Builder.build(ResourceMethodInvoker.java:197)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createInflector(RuntimeModelBuilder.java:106)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createMethodRouter(RuntimeModelBuilder.java:93)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createResourceMethodRouters(RuntimeModelBuilder.java:287)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.buildModel(RuntimeModelBuilder.java:151)
+	at org.glassfish.jersey.server.internal.routing.Routing$Builder.buildStage(Routing.java:223)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:399)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:293)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:259)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:154)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:347)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:203)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1530)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1337)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5520)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:5770)
+	at com.sun.enterprise.web.WebModule.start(WebModule.java:619)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:958)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:694)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1851)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1603)
+	at com.sun.enterprise.web.WebApplication.start(WebApplication.java:107)
+	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:123)
+	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:292)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:361)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.initialize(ApplicationLifecycle.java:623)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:592)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]
+
+[2022-02-03T19:56:14.258+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574258] [levelValue: 1000] [[
+  WebModule[/ShareLoc]Servlet /ShareLoc threw load() exception
+java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at org.glassfish.weld.ACLSingletonProvider$ACLSingleton.get(ACLSingletonProvider.java:117)
+	at org.jboss.weld.Container.instance(Container.java:57)
+	at org.jboss.weld.SimpleCDI.<init>(SimpleCDI.java:77)
+	at org.glassfish.weld.GlassFishWeldProvider$GlassFishEnhancedWeld.<init>(GlassFishWeldProvider.java:57)
+	at org.glassfish.weld.GlassFishWeldProvider$GlassFishEnhancedWeld.<init>(GlassFishWeldProvider.java:57)
+	at org.glassfish.weld.GlassFishWeldProvider.getCDI(GlassFishWeldProvider.java:96)
+	at javax.enterprise.inject.spi.CDI.lambda$getCDIProvider$0(CDI.java:87)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.TreeMap$KeySpliterator.tryAdvance(TreeMap.java:3088)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at javax.enterprise.inject.spi.CDI.getCDIProvider(CDI.java:88)
+	at javax.enterprise.inject.spi.CDI.current(CDI.java:64)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedRequestFilter.<init>(RolesAllowedRequestFilter.java:97)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedRequestFilter.<init>(RolesAllowedRequestFilter.java:90)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedDynamicFeature.configure(RolesAllowedDynamicFeature.java:85)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.<init>(ResourceMethodInvoker.java:222)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.<init>(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker$Builder.build(ResourceMethodInvoker.java:197)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createInflector(RuntimeModelBuilder.java:106)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createMethodRouter(RuntimeModelBuilder.java:93)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createResourceMethodRouters(RuntimeModelBuilder.java:287)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.buildModel(RuntimeModelBuilder.java:151)
+	at org.glassfish.jersey.server.internal.routing.Routing$Builder.buildStage(Routing.java:223)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:399)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:293)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:259)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:154)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:347)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:203)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1530)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1337)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5520)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:5770)
+	at com.sun.enterprise.web.WebModule.start(WebModule.java:619)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:958)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:694)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1851)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1603)
+	at com.sun.enterprise.web.WebApplication.start(WebApplication.java:107)
+	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:123)
+	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:292)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:361)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.initialize(ApplicationLifecycle.java:623)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:592)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]
+
+[2022-02-03T19:56:14.258+0100] [Payara 5.2021.9] [GRAVE] [AS-WEB-CORE-00174] [javax.enterprise.web.core] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574258] [levelValue: 1000] [[
+  Startup of context /ShareLoc failed due to previous errors]]
+
+[2022-02-03T19:56:14.267+0100] [Payara 5.2021.9] [GRAVE] [AS-WEB-CORE-00108] [javax.enterprise.web.core] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574267] [levelValue: 1000] [[
+  ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:5778)
+	at com.sun.enterprise.web.WebModule.start(WebModule.java:619)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:958)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:694)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1851)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1603)
+	at com.sun.enterprise.web.WebApplication.start(WebApplication.java:107)
+	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:123)
+	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:292)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:361)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.initialize(ApplicationLifecycle.java:623)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:592)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.catalina.LifecycleException: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5529)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:5770)
+	... 48 more
+Caused by: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at org.glassfish.weld.ACLSingletonProvider$ACLSingleton.get(ACLSingletonProvider.java:117)
+	at org.jboss.weld.Container.instance(Container.java:57)
+	at org.jboss.weld.SimpleCDI.<init>(SimpleCDI.java:77)
+	at org.glassfish.weld.GlassFishWeldProvider$GlassFishEnhancedWeld.<init>(GlassFishWeldProvider.java:57)
+	at org.glassfish.weld.GlassFishWeldProvider$GlassFishEnhancedWeld.<init>(GlassFishWeldProvider.java:57)
+	at org.glassfish.weld.GlassFishWeldProvider.getCDI(GlassFishWeldProvider.java:96)
+	at javax.enterprise.inject.spi.CDI.lambda$getCDIProvider$0(CDI.java:87)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.TreeMap$KeySpliterator.tryAdvance(TreeMap.java:3088)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at javax.enterprise.inject.spi.CDI.getCDIProvider(CDI.java:88)
+	at javax.enterprise.inject.spi.CDI.current(CDI.java:64)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedRequestFilter.<init>(RolesAllowedRequestFilter.java:97)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedRequestFilter.<init>(RolesAllowedRequestFilter.java:90)
+	at fish.payara.microprofile.jwtauth.jaxrs.RolesAllowedDynamicFeature.configure(RolesAllowedDynamicFeature.java:85)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.<init>(ResourceMethodInvoker.java:222)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.<init>(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker$Builder.build(ResourceMethodInvoker.java:197)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createInflector(RuntimeModelBuilder.java:106)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createMethodRouter(RuntimeModelBuilder.java:93)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.createResourceMethodRouters(RuntimeModelBuilder.java:287)
+	at org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.buildModel(RuntimeModelBuilder.java:151)
+	at org.glassfish.jersey.server.internal.routing.Routing$Builder.buildStage(Routing.java:223)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:399)
+	at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$1(ApplicationHandler.java:293)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:259)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:154)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:347)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:203)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1530)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1337)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5520)
+	... 49 more
+]]
+
+[2022-02-03T19:56:14.267+0100] [Payara 5.2021.9] [AVERTISSEMENT] [] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574267] [levelValue: 900] [[
+  java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:962)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:694)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1851)
+	at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1603)
+	at com.sun.enterprise.web.WebApplication.start(WebApplication.java:107)
+	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:123)
+	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:292)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:361)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.initialize(ApplicationLifecycle.java:623)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:592)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]
+
+[2022-02-03T19:56:14.269+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574269] [levelValue: 1000] [[
+  Exception while invoking class com.sun.enterprise.web.WebApplication start method
+java.lang.Exception: java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at com.sun.enterprise.web.WebApplication.start(WebApplication.java:136)
+	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:123)
+	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:292)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:361)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.initialize(ApplicationLifecycle.java:623)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:592)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]
+
+[2022-02-03T19:56:14.269+0100] [Payara 5.2021.9] [GRAVE] [NCLS-CORE-00026] [javax.enterprise.system.core] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574269] [levelValue: 1000] [[
+  Exception during lifecycle processing
+java.lang.Exception: java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11
+	at com.sun.enterprise.web.WebApplication.start(WebApplication.java:136)
+	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:123)
+	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:292)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:361)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.initialize(ApplicationLifecycle.java:623)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:592)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:556)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:552)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:551)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:582)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:574)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:376)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:573)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1497)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:120)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1879)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1755)
+	at com.sun.enterprise.v3.admin.AdminAdapter.doCommand(AdminAdapter.java:604)
+	at com.sun.enterprise.v3.admin.AdminAdapter.onMissingResource(AdminAdapter.java:256)
+	at org.glassfish.grizzly.http.server.StaticHttpHandlerBase.service(StaticHttpHandlerBase.java:166)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:520)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:217)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:182)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:156)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:218)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:95)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:260)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:177)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:109)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:88)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:53)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:524)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:94)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:33)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:114)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:569)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:549)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]
+
+[2022-02-03T19:56:14.270+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.system.core] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574270] [levelValue: 1000] [[
+  Exception while loading the app]]
+
+[2022-02-03T19:56:14.270+0100] [Payara 5.2021.9] [GRAVE] [AS-WEB-GLUE-00192] [javax.enterprise.web] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574270] [levelValue: 1000] [[
+  Undeployment failed for context /ShareLoc]]
+
+[2022-02-03T19:56:14.277+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574277] [levelValue: 300] [[
+  Begin undeploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state Deployed; factoryCount 1]]
+
+[2022-02-03T19:56:14.277+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574277] [levelValue: 300] [[
+  Unregistering MBean: TopLink:Name=Development-/file_/C_/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA,Type=Configuration on server com.sun.enterprise.v3.admin.DynamicInterceptor@3a451022]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 300] [[
+  jmx_unregistered_mbean (There is no English translation for this message.)]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 300] [[
+  Unregistering MBean: TopLink:Name=Session(/file_/C_/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA) on server com.sun.enterprise.v3.admin.DynamicInterceptor@3a451022]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.server] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 300] [[
+  jmx_unregistered_mbean (There is no English translation for this message.)]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.sequencing] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 300] [[
+  sequencing disconnected]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 500] [[
+  disconnect]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.cache] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 400] [[
+  initialize identitymaps]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.connection] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 500] [[
+  /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA logout successful]]
+
+[2022-02-03T19:56:14.278+0100] [Payara 5.2021.9] [LE PLUS PRÉCIS] [] [org.eclipse.persistence.session./file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA.jpa] [tid: _ThreadID=98 _ThreadName=Executor-Service-2] [timeMillis: 1643914574278] [levelValue: 300] [[
+  End undeploying Persistence Unit Eclipselink_JPA; session /file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/_Eclipselink_JPA; state Undeployed; factoryCount 0]]
+
+[2022-02-03T19:56:14.286+0100] [Payara 5.2021.9] [GRAVE] [] [javax.enterprise.system.core] [tid: _ThreadID=116 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1643914574286] [levelValue: 1000] [[
+  Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: org.apache.catalina.LifecycleException: java.lang.IllegalStateException: Singleton not set for WebappClassLoader (delegate=true; repositoryURLs=file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/generated/ejb/ShareLoc/,file:/C:/Users/amalm/eclipse-workspace/ShareLoc/payara5/domains/domain1/eclipseApps/ShareLoc/WEB-INF/classes/) JarNames: []; canonicalLoaderDir: C:\Users\amalm\eclipse-workspace\ShareLoc\payara5\domains\domain1\generated\jsp\ShareLoc\loader_1654998276\; Object: 62a54504 Created: 3 févr. 2022, 19:56:11]]
+
+[2022-02-03T20:00:14.083+0100] [Payara 5.2021.9] [INFOS] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=188 _ThreadName=Thread-29] [timeMillis: 1643914814083] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2022-02-03T20:00:14.089+0100] [Payara 5.2021.9] [INFOS] [] [] [tid: _ThreadID=188 _ThreadName=Thread-29] [timeMillis: 1643914814089] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2022-02-03T20:00:14.101+0100] [Payara 5.2021.9] [INFOS] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=188 _ThreadName=Thread-29] [timeMillis: 1643914814101] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2022-02-03T20:00:14.101+0100] [Payara 5.2021.9] [INFOS] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=188 _ThreadName=Thread-29] [timeMillis: 1643914814101] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2022-02-03T20:00:14.147+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=192 _ThreadName=RunLevelControllerThread-1643914814129] [timeMillis: 1643914814147] [levelValue: 800] [[
+  Hazelcast Instance Unbound from JNDI at payara/Hazelcast]]
+
+[2022-02-03T20:00:14.147+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=192 _ThreadName=RunLevelControllerThread-1643914814129] [timeMillis: 1643914814147] [levelValue: 800] [[
+  JSR107 Caching Provider Unbound from JNDI at payara/CachingProvider]]
+
+[2022-02-03T20:00:14.147+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=192 _ThreadName=RunLevelControllerThread-1643914814129] [timeMillis: 1643914814147] [levelValue: 800] [[
+  JSR107 Cache Manager Unbound from JNDI at payara/CacheManager]]
+
+[2022-02-03T20:00:14.167+0100] [Payara 5.2021.9] [INFOS] [] [fish.payara.nucleus.hazelcast.HazelcastCore] [tid: _ThreadID=192 _ThreadName=RunLevelControllerThread-1643914814129] [timeMillis: 1643914814167] [levelValue: 800] [[
+  Shutdown Hazelcast]]
+
+[2022-02-03T20:00:14.173+0100] [Payara 5.2021.9] [INFOS] [] [] [tid: _ThreadID=192 _ThreadName=RunLevelControllerThread-1643914814129] [timeMillis: 1643914814173] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource]]]
+
+[2022-02-03T20:00:14.198+0100] [Payara 5.2021.9] [INFOS] [] [javax.enterprise.resource.resourceadapter.com.sun.enterprise.connectors.service] [tid: _ThreadID=204 _ThreadName=RA Shutdown] [timeMillis: 1643914814198] [levelValue: 800] [[
+  RAR7094: __ds_jdbc_ra shutdown successful.]]
+
