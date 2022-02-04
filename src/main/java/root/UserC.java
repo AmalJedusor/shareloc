@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name="userc")
 public class UserC {
 	private String email;
 	private String name;
