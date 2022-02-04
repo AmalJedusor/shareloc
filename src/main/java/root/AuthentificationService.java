@@ -50,20 +50,17 @@ public class AuthentificationService {
 	
 	    private String issueToken(String username)  {
 	        
-	    	   try {
+	    	
 	    		   Algorithm algorithm = Algorithm.HMAC256("secret");
 	               String token = JWT.create()
 	                       .withIssuer("auth0")
 	                       .sign(algorithm);
 
 	   	    	return token;
-	            } catch (JWTCreationException exception){
-	                //Invalid Signing configuration / Couldn't convert Claims.
-	                exception.printStackTrace();
-	            }
-	    	   return null;
-	       
+	           
+	    	 
 	    }
+	    
 	
 }
 
