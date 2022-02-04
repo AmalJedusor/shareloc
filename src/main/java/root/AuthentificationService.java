@@ -7,7 +7,10 @@ import javax.transaction.Transactional;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.exceptions.JWTVerificationException;
+import com.auth0.jwt.interfaces.DecodedJWT;
 
 import repository.UserCRepo;
 
@@ -56,6 +59,21 @@ public class AuthentificationService {
 	   	    	return token;
 	           
 	    	 
+	    }
+	    
+	    private String verifyToken(String token) throws IllegalArgumentException, UnsupportedEncodingException  {
+	 	   
+	    try {
+	        Algorithm algorithm = Algorithm.HMAC256("secret");
+	        JWTVerifier verifier = JWT.require(algorithm)
+	            .withIssuer("auth0")
+	            .build(); //Reusable verifier instance
+	        DecodedJWT jwt = verifier.verify(token);
+	    } catch (JWTVerificationException exception){
+	        //Invalid signature/claims
+	    }
+		return token;
+	    
 	    }
 	    
 	

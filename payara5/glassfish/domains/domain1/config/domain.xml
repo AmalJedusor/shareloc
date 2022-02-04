@@ -586,7 +586,7 @@
   <deployment-groups></deployment-groups>
   <clusters></clusters>
   <applications>
-    <application deployment-time="6863" context-root="/ShareLoc" object-type="user" name="ShareLoc" directory-deployed="true" location="${com.sun.aas.instanceRootURI}/eclipseApps/ShareLoc/" time-deployed="1643997547598">
+    <application deployment-time="516" context-root="/ShareLoc" object-type="user" name="ShareLoc" directory-deployed="true" location="${com.sun.aas.instanceRootURI}/eclipseApps/ShareLoc/" time-deployed="1643999524147">
       <property name="archiveType" value="war"></property>
       <property name="cdiDevModeEnabled" value="false"></property>
       <property name="defaultAppName" value="ShareLoc"></property>

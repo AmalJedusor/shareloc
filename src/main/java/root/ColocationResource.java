@@ -22,7 +22,10 @@ import javax.transaction.Transactional;
 import javax.transaction.UserTransaction;
 import javax.ws.rs.*;
 
+import io.swagger.annotations.Api;
+
 @Path("/colocations")
+@Api(value = "/colocations", consumes="application/json")
 public class ColocationResource {
 
 	ArrayList<Colocation> colocations = new ArrayList<Colocation>();
